@@ -11,35 +11,37 @@ export const HeroSection = () => {
     <div className='py-32 md:py-48 lg:py-60 relative overflow-x-clip'>
 
       {/*START bg elems*/}
-      <div className='absolute inset-0 -z-30 opacity-5' style={{ backgroundImage: `url(${grainImage.src})` }}></div>
-      <div className='size-[620px] hero-ring'></div>
-      <div className='size-[820px] hero-ring'></div>
-      <div className='size-[1020px] hero-ring'></div>
-      <div className='size-[1220px] hero-ring'></div>
-      <HeroOrbit size={680} rotation={-70}>
-        <StarIcon className='size-28 text-emerald-300' />
-      </HeroOrbit>
-      <HeroOrbit size={550} rotation={15}>
-        <StarIcon className='size-12 text-emerald-300' />
-      </HeroOrbit>
-      <HeroOrbit size={590} rotation={100}>
-        <StarIcon className='size-8 text-emerald-300' />
-      </HeroOrbit>
-      <HeroOrbit size={430} rotation={-15}>
-        <SparkleIcon className='size-8 text-emerald-300/20' />
-      </HeroOrbit>
-      <HeroOrbit size={440} rotation={80}>
-        <SparkleIcon className='size-5 text-emerald-300/20' />
-      </HeroOrbit>
-      <HeroOrbit size={530} rotation={180}>
-        <SparkleIcon className='size-10 text-emerald-300/20' />
-      </HeroOrbit>
-      <HeroOrbit size={710} rotation={150}>
-        <SparkleIcon className='size-14 text-emerald-300/20' />
-      </HeroOrbit>
-      <HeroOrbit size={720} rotation={185} >
-        <div className='size-2 rounded-full text-emerald-300/20' />
-      </HeroOrbit>
+      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
+        <div className='absolute inset-0 -z-30 opacity-5' style={{ backgroundImage: `url(${grainImage.src})` }}></div>
+        <div className='size-[620px] hero-ring'></div>
+        <div className='size-[820px] hero-ring'></div>
+        <div className='size-[1020px] hero-ring'></div>
+        <div className='size-[1220px] hero-ring'></div>
+        <HeroOrbit size={680} rotation={-70}>
+          <StarIcon className='size-28 text-emerald-300' />
+        </HeroOrbit>
+        <HeroOrbit size={550} rotation={15}>
+          <StarIcon className='size-12 text-emerald-300' />
+        </HeroOrbit>
+        <HeroOrbit size={590} rotation={100}>
+          <StarIcon className='size-8 text-emerald-300' />
+        </HeroOrbit>
+        <HeroOrbit size={430} rotation={-15}>
+          <SparkleIcon className='size-8 text-emerald-300/20' />
+        </HeroOrbit>
+        <HeroOrbit size={440} rotation={80}>
+          <SparkleIcon className='size-5 text-emerald-300/20' />
+        </HeroOrbit>
+        <HeroOrbit size={530} rotation={180}>
+          <SparkleIcon className='size-10 text-emerald-300/20' />
+        </HeroOrbit>
+        <HeroOrbit size={710} rotation={150}>
+          <SparkleIcon className='size-14 text-emerald-300/20' />
+        </HeroOrbit>
+        <HeroOrbit size={720} rotation={185} >
+          <div className='size-2 rounded-full text-emerald-300/20' />
+        </HeroOrbit>
+      </div>
       {/*END bg elems*/}
 
       <div className="container">
