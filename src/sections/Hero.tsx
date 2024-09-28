@@ -2,6 +2,9 @@ import headerLaptopGuy from '@/assets/images/memoji-computer.png'
 import Image from 'next/image';
 import ArrowDown from '@/assets/icons/arrow-down.svg'
 import grainImage from "@/assets/images/grain.jpg"
+import { HeroOrbit } from '@/components/HeroOrbit';
+import StarIcon from "@/assets/icons/star.svg"
+import SparkleIcon from "@/assets/icons/sparkle.svg"
 
 export const HeroSection = () => {
   return (
@@ -13,6 +16,30 @@ export const HeroSection = () => {
       <div className='size-[820px] hero-ring'></div>
       <div className='size-[1020px] hero-ring'></div>
       <div className='size-[1220px] hero-ring'></div>
+      <HeroOrbit size={680} rotation={-70}>
+        <StarIcon className='size-28 text-emerald-300' />
+      </HeroOrbit>
+      <HeroOrbit size={550} rotation={15}>
+        <StarIcon className='size-12 text-emerald-300' />
+      </HeroOrbit>
+      <HeroOrbit size={590} rotation={100}>
+        <StarIcon className='size-8 text-emerald-300' />
+      </HeroOrbit>
+      <HeroOrbit size={430} rotation={-15}>
+        <SparkleIcon className='size-8 text-emerald-300/20' />
+      </HeroOrbit>
+      <HeroOrbit size={440} rotation={80}>
+        <SparkleIcon className='size-5 text-emerald-300/20' />
+      </HeroOrbit>
+      <HeroOrbit size={530} rotation={180}>
+        <SparkleIcon className='size-10 text-emerald-300/20' />
+      </HeroOrbit>
+      <HeroOrbit size={710} rotation={150}>
+        <SparkleIcon className='size-14 text-emerald-300/20' />
+      </HeroOrbit>
+      <HeroOrbit size={720} rotation={185} >
+        <div className='size-2 rounded-full text-emerald-300/20' />
+      </HeroOrbit>
       {/*END bg elems*/}
 
       <div className="container">
