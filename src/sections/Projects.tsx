@@ -59,8 +59,11 @@ export const ProjectsSection = () => {
         {/*START Card*/}
         <div className="flex flex-col mt-10 md:mt-20 gap-20">
           {/*https://youtu.be/ELssXP1sTC8?t=5348 for how the overlay of transparent border works*/}
-          {portfolioProjects.map((project) => (
-            <Card className="px-8 pb-0s pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20" key={project.title}>
+          {portfolioProjects.map((project, index) => (
+            <Card className="px-8 pb-0s pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky" key={project.title} 
+            style={{
+              top: `calc(64px + ${index * 40}px)`
+              }}>
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
                   <div className="inline-flex gap-2 bg-gradient-to-r from-emerald-300 to-sky-400 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
