@@ -8,7 +8,7 @@ export const Header = () => {
           <a
             key={link.label}
             href={link.href}
-            className="nav-item bg-white text-gray-900 hover:bg-white/70 hover-text-gray-900"
+            className="nav-item bg-white text-gray-900 hover:bg-white/70 hover-text-gray-800"
           >
             {link.label}
           </a>
